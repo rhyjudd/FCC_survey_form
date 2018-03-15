@@ -25,7 +25,7 @@
                 <div class='w3-col s6 w3-right-align'>*Age:</div>
                 <div class='w3-col s6 w3-left-align'><input type="text" name="age" value='Enter your age...'></div>
             </div>
-            <div class='w3-row'>
+            <div class='w3-row w3-padding-16'>
                     <div class='w3-col s6 w3-right-align'>What option best describes your current role?</div>
                     <div class='w3-col s6 w3-left-align'> 
                         <select>
@@ -34,10 +34,34 @@
                             <option value='Hobbyist'>Hobbyist</option>
                             <option value='Other'>Other</option>
                           </select> 
-                    </div>
+                    </div>            
             </div>
-            <button class='w3-btn w3-teal w3-margin'>Submit</button>
-
+            <div class='w3-row w3-padding-16'>
+                <div class='w3-col s6 w3-right-align'>*Is it likely that you would recommend FreeCodeCamp to a friend?</div>
+                <div class='w3-col s6 w3-left-align'>
+                    <form>
+                        <input type='radio' name='recommendation' value='Yes!'> Yes! <br>
+                        <input type='radio' name='recommendation' value='Maybe'> Maybe <br>
+                        <input type='radio' name='recommendation' value='No!'> No! <br>
+                    </form>
+                </div>
+            </div>
+            <div class="w3-row">
+                <div class='w3-col s6 w3-right-align'>Select a language(s) or framework(s) that you would like to have included in future versions of FreeCodeCamp</div>
+                <div class='w3-col s6 w3-left-align'>
+                        <input type='checkbox' id='Python'> Python <br>
+                        <input type='checkbox' id='Java'> Java <br>
+                        <input type='checkbox' id='C'> C <br>
+                        <input type='checkbox' id='C#'> C# <br>
+                        <input type='checkbox' id='Vue'> Vue <br>
+                        <input type='checkbox' id='Angular5'> Angular5 <br>
+                        <input type='checkbox' id='PHP'> PHP <br>
+                </div>
+            </div>
+            <div class="w3-row">
+                <button class='w3-btn w3-teal w3-margin w3-center' type='button'>Submit</button>
+            </div>
+            
 
         </form>
     </div>
