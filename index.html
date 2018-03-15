@@ -11,8 +11,8 @@
     <h1 id='title' class='w3-center'>FreeCodeCamp Survey Form</h1>
 
     <div class='w3-card-2 w3-margin'>
-        <form action="" id='survey-form' class='w3-center w3-padding-16'>
-            <p id='description'>Let us know what languages or frameworks you want included in FreeCodeCamp.</p>
+        <form action="" id='survey-form' class='w3-center'>
+            <p id='description' class='w3-padding-16'>Let us know what languages or frameworks you want included in FreeCodeCamp.</p>
             <div class='w3-row w3-padding-16'>
                 <div class='w3-col s6 w3-right-align'>*Name:</div>
                 <div class='w3-col s6 w3-left-align'><input type="text" name="name" value='Enter your name...'></div>
@@ -25,10 +25,24 @@
                 <div class='w3-col s6 w3-right-align'>*Age:</div>
                 <div class='w3-col s6 w3-left-align'><input type="text" name="age" value='Enter your age...'></div>
             </div>
+            <div class='w3-row'>
+                    <div class='w3-col s6 w3-right-align'>What option best describes your current role?</div>
+                    <div class='w3-col s6 w3-left-align'> 
+                        <select>
+                            <option value='Student'>Student</option>
+                            <option value='Professional'>Professional</option>
+                            <option value='Hobbyist'>Hobbyist</option>
+                            <option value='Other'>Other</option>
+                          </select> 
+                    </div>
+            </div>
             <button class='w3-btn w3-teal w3-margin'>Submit</button>
 
 
         </form>
     </div>
+
+    
+            
 </body>
 </html>
