@@ -5,30 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+    
     <title>FCC: Survey Form</title>
 </head>
-<body>
+<body class='w3-light-blue w3-center'>
     <h1 id='title' class='w3-center'>FreeCodeCamp Survey Form</h1>
 
-    <div class='w3-card-2 w3-margin'>
-        <form action="" id='survey-form' class='w3-center'>
-            <p id='description' class='w3-padding-16'>Let us know what languages or frameworks you want included in FreeCodeCamp.</p>
+    <div class='w3-card-2 w3-margin w3-center w3-light-grey w3-round'>
+        <form id='survey-form' >
+
+            <p id='description' class='w3-padding-16 w3-center'>Let us know what languages or frameworks you want included in FreeCodeCamp.</p>
+
             <div class='w3-row w3-padding-16'>
                 <div class='w3-col s6 w3-right-align'>*Name:</div>
-                <div class='w3-col s6 w3-left-align'><input type="text" name="name" value='Enter your name...'></div>
+                <div class='w3-col s6 w3-left-align'><input type="text" name="name"  value='Enter your name...'></div>
             </div>
+
             <div class='w3-row w3-padding-16'>
                 <div class='w3-col s6 w3-right-align'>*Email:</div>
-                <div class='w3-col s6 w3-left-align'><input type="text" name="email" value='Enter your email address...'></div>
+                <div class='w3-col s6 w3-left-align'><input type="text" name="email"  value='Enter your email address...'></div>
             </div>
+
             <div class='w3-row w3-padding-16'>
                 <div class='w3-col s6 w3-right-align'>*Age:</div>
-                <div class='w3-col s6 w3-left-align'><input type="text" name="age" value='Enter your age...'></div>
+                <div class='w3-col s6 w3-left-align'><input type="text" name="age"  value='Enter your age...'></div>
             </div>
+
             <div class='w3-row w3-padding-16'>
                     <div class='w3-col s6 w3-right-align'>What option best describes your current role?</div>
                     <div class='w3-col s6 w3-left-align'> 
-                        <select>
+                        <select >
                             <option value='Student'>Student</option>
                             <option value='Professional'>Professional</option>
                             <option value='Hobbyist'>Hobbyist</option>
@@ -36,6 +43,7 @@
                           </select> 
                     </div>            
             </div>
+
             <div class='w3-row w3-padding-16'>
                 <div class='w3-col s6 w3-right-align'>*Is it likely that you would recommend FreeCodeCamp to a friend?</div>
                 <div class='w3-col s6 w3-left-align'>
@@ -46,10 +54,11 @@
                     </form>
                 </div>
             </div>
-            <div class="w3-row">
+
+            <div class="w3-row w3-padding-16">
                 <div class='w3-col s6 w3-right-align'>Select a language(s) or framework(s) that you would like to have included in future versions of FreeCodeCamp</div>
                 <div class='w3-col s6 w3-left-align'>
-                        <input type='checkbox' id='Python'> Python <br>
+                        <input type='checkbox'   id='Python'> Python <br>
                         <input type='checkbox' id='Java'> Java <br>
                         <input type='checkbox' id='C'> C <br>
                         <input type='checkbox' id='C#'> C# <br>
@@ -58,16 +67,14 @@
                         <input type='checkbox' id='PHP'> PHP <br>
                 </div>
             </div>
-            <div class="w3-row">
-                <div class='w3-col s6 w3-right-align'>Do you have any other suggestions or comments?</div>
-                <div class='w3-col s6 w3-left-align'><input type='text'></div>
-            </div>
-            <div class="w3-row">
-                <button class='w3-btn w3-teal w3-margin w3-center' type='button'>Submit</button>
-            </div>
-            
 
+            <div class="w3-row w3-padding-16">
+                <div class='w3-col s6 w3-right-align'>Do you have any other suggestions or comments?</div>
+                <div class='w3-col s6 w3-left-align'><input type='text' ></div>
+            </div>          
         </form>
+        
+        <button class='w3-btn w3-center w3-margin w3-round w3-blue'>Submit</button>
     </div>
 
     
