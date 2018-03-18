@@ -9,7 +9,17 @@
     
     <title>FCC: Survey Form</title>
     <style>
+        .inputField-right{
+            float:right;
+        }
 
+
+        @media only screen and (max-width: 768px) {
+            /* For mobile phones: */
+            [class*="inputField-"] {
+                float:left;
+            }
+        }
     </style>
 </head>
 <body class='w3-light-blue w3-center'>
@@ -21,23 +31,23 @@
             <p id='description' class='w3-padding-16 w3-center'>Let us know what languages or frameworks you want included in FreeCodeCamp.</p>
 
             <div class='w3-row w3-padding-16'>
-                <div class='w3-col l6 inputField w3-padding-small'>*Name:</div>
-                <div class='w3-col l6 inputField w3-padding-small'><input type="text" name="name" placeholder="name..." required></div>
+                <div class='w3-col m6  w3-padding-small'><span class='inputField-right'>*Name:</span></div>
+                <div class='w3-col m6 w3-left-align w3-padding-small'><input  type="text" name="name" placeholder="name..." required></div>
             </div>
 
             <div class='w3-row w3-padding-16'>
-                <div class='w3-col l6 w3-right-align w3-padding-small'>*Email:</div>
-                <div class='w3-col  l6 w3-left-align w3-padding-small'><input type="text" name="email"  placeholder='email address...' required></div>
+                <div class='w3-col m6  w3-padding-small'><span class='inputField-right'>*Email:</span></div>
+                <div class='w3-col  m6  w3-left-align w3-padding-small'><input type="text" name="email"  placeholder='email address...' required></div>
             </div>
 
             <div class='w3-row w3-padding-16'>
-                <div class='w3-col l6 w3-right-align w3-padding-small'>*Age:</div>
-                <div class='w3-col  l6 w3-left-align w3-padding-small'><input type="text" name="age"  placeholder='age...' required></div>
+                <div class='w3-col m6 w3-right-align w3-padding-small'><span class='inputField-right'>*Age:</span></div>
+                <div class='w3-col  m6 w3-left-align w3-padding-small'><input type="text" name="age"  placeholder='age...' required></div>
             </div>
 
             <div class='w3-row w3-padding-16'>
-                    <div class='w3-col s6 w3-right-align w3-padding-small'>What option best describes your current role?</div>
-                    <div class='w3-col s6 w3-left-align w3-padding-small'> 
+                    <div class='w3-col m6 w3-right-align w3-padding-small'><span class='inputField-right'>What option best describes your current role?</span></div>
+                    <div class='w3-col m6 w3-left-align w3-padding-small'> 
                         <select >
                             <option value='Student'>Student</option>
                             <option value='Professional'>Professional</option>
@@ -48,8 +58,8 @@
             </div>
 
             <div class='w3-row w3-padding-16'>
-                <div class='w3-col s6 w3-right-align w3-padding-small'>*Is it likely that you would recommend FreeCodeCamp to a friend?</div>
-                <div class='w3-col s6 w3-left-align w3-padding-small'>
+                <div class='w3-col m6 w3-right-align w3-padding-small'><span class='inputField-right'>*Is it likely that you would recommend FreeCodeCamp to a friend?</span></div>
+                <div class='w3-col m6 w3-left-align w3-padding-small'>
                     <form>
                         <input type='radio' name='recommendation' value='Yes!'> Yes! <br>
                         <input type='radio' name='recommendation' value='Maybe'> Maybe <br>
@@ -59,8 +69,8 @@
             </div>
 
             <div class="w3-row w3-padding-16">
-                <div class='w3-col s6 w3-right-align w3-padding-small'>Select a language(s) or framework(s) that you would like to have included in future versions of FreeCodeCamp</div>
-                <div class='w3-col s6 w3-left-align w3-padding-small'>
+                <div class='w3-col m6 w3-right-align w3-padding-small'><span class='inputField-right'>Select a language(s) or framework(s) that you would like to have included in future versions of FreeCodeCamp</span></div>
+                <div class='w3-col m6 w3-left-align w3-padding-small'>
                         <input type='checkbox'   id='Python'> Python <br>
                         <input type='checkbox' id='Java'> Java <br>
                         <input type='checkbox' id='C'> C <br>
@@ -72,8 +82,8 @@
             </div>
 
             <div class="w3-row w3-padding-16">
-                <div class='w3-col s6 w3-right-align w3-padding-small'>Do you have any other suggestions or comments?</div>
-                <div class='w3-col s6 w3-left-align w3-padding-small'><textarea placeholder="comments" name='comments'></textarea>
+                <div class='w3-col m6 w3-right-align w3-padding-small'><span class='inputField-right'>Do you have any other suggestions or comments?</span></div>
+                <div class='w3-col m6 w3-left-align w3-padding-small'><textarea placeholder="comments" name='comments'></textarea>
             </div>          
         </form>
         
